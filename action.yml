@@ -1,0 +1,18 @@
+name: "Daily-Debugs Generator"
+author: "Nikhil Kumar Gattu"
+description: "Generates a feed of daily experiences from YAML file"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+brading:
+  icon: "git-branch"
+  color: "red"
+inputs:
+  email: 
+    description: The commiter's email
+    required: true
+    default: ${{ github.actor }}@localhost
+  name:
+    description: The committer's name
+    required: true
+    default: ${{ github.actor }}
