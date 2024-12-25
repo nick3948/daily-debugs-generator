@@ -4,7 +4,7 @@ description: "Generates a feed of daily experiences from YAML file"
 runs:
   using: "docker"
   image: "DockerFile"
-brading:
+branding:
   icon: "arrow-up-circle"
   color: "red"
 inputs:
